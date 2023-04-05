@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Total Bill</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, gray, black);
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    table {
+        
+      width: 100%;
+      margin: 0 auto;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #ddd;
+    }
+
+    .total-bill {
+      width: 100%;
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 20px;
+      text-align: center;
+      font-size: 18px;
+      background-color: #fff;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #000;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    input:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Total Bill</h1>
+    <table>
+      <tr>
+        <th>Product Name</th>
+        <th>Unit Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+      </tr>
+      <tr>
+        <td>iPhone 14 pro maxx</td>
+        <td>₹ 1</td>
+        <td>1</td>
+        <td>₹ 1</td>
+      </tr>
+    </table>
+    <div class="total-bill">
+      Grand Total: ₹<span id="grandTotal">1</span>
+    </div>
+    <input type="submit" value="Proceed to Payment">
+  </div>
+</body>
+</html>
+
